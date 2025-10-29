@@ -1,0 +1,85 @@
+/* General reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.stopwatch {
+  background-color: #222;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#display {
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ffcc;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#start {
+  background-color: #28a745;
+  color: white;
+}
+
+#stop {
+  background-color: #ffc107;
+  color: white;
+}
+
+#reset {
+  background-color: #dc3545;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .stopwatch {
+    padding: 20px;
+  }
+
+  #display {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
